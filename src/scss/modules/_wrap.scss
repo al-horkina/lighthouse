@@ -1,0 +1,19 @@
+.wrap {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+
+  &--nav {
+    @include flex-between();
+
+    @include respond-to(largeScreen) {
+      width: 100%;
+      @include flex-around();
+    }
+
+  @include respond-to(middleSmartphone) {
+      @include flex-center-col();
+    }
+  }
+
+}

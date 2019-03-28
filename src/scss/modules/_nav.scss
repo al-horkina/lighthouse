@@ -1,0 +1,64 @@
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  color: $white;
+  background: $navColor;
+
+  @include respond-to(middleSmartphone){
+    position: relative;
+    background: $mainFontColor;
+  }
+
+  &__img {
+    width: 50px;
+    height: auto;
+
+  }
+
+
+  &__logo {
+    font-family: $logoFont;
+    color: $titleColor;
+    font-size: 52px;
+    margin-top: 10px;
+
+    @include respond-to(middleSmartphone){
+      font-size: 2rem;
+      margin: 0 auto;
+      padding-top: .5rem;
+    }
+  }
+}
+
+.soc {
+  margin: auto 0;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+
+  @include respond-to(middleSmartphone) {
+    margin: 8px;
+  }
+
+  &__link {
+    opacity: .7;
+    padding: 0 8px;
+    font-family: $mainFont;
+    text-decoration: none;
+    color: $white;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover, &:focus {
+      opacity: 1;
+    }
+
+  }
+}
+
