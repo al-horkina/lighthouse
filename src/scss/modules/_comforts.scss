@@ -1,11 +1,11 @@
 .comforts {
-  //height: 300px;
+  height: auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
-  background-image: url("../img/liana-mikah.jpg");
+  background-image: url("../img/liana1.jpg");
 
   @include respond-to(largeScreen) {
     width: 100%;
