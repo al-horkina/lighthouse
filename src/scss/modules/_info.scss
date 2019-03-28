@@ -1,5 +1,4 @@
 .info {
-  margin: 50px auto;
   @include flex-center-col();
   color: $textColor;
   font-family: $mainFont;
@@ -10,7 +9,6 @@
 
   &__img {
     padding-top: 2px;
-
   }
 
   &__title {
@@ -31,8 +29,8 @@
   }
 
   &__text {
-    text-align: left;
-    font-size: 24px;
+    text-align: justify;
+    font-size: 22px;
     letter-spacing: .8px;
     line-height: 25px;
     margin: 0;
@@ -44,7 +42,5 @@
     }
 
   }
-
-
 
 }

@@ -1,9 +1,10 @@
 .wrap {
   max-width: 1000px;
   text-align: center;
-  margin: 0 auto;
+  margin: 50px auto;
 
   &--nav {
+    margin: 0 auto;
     @include flex-between();
 
     @include respond-to(largeScreen) {
