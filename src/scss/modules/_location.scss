@@ -1,0 +1,10 @@
+.location {
+  height: 300px;
+  width: 100%;
+  //margin-top: 78px;
+
+  @include respond-to(largeScreen) {
+    width: 100%;
+  }
+
+}
