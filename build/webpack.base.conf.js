@@ -68,11 +68,12 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: `${PATHS.assets}css/[name].css`,
         }),
-        new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin(
+            {
             hash: false,
             template: `${PATHS.src}/index.html`,
             filename: './index.html'
-        }),
+            }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
             {from: `${PATHS.src}/static`, to: ''},

@@ -1,0 +1,116 @@
+.price {
+  color: $mainFontColor;
+  font-family: $mainFont ;
+  font-size: 18px;
+
+  @include respond-to(largeScreen) {
+    font-size: 16px;
+  }
+  @include respond-to(middleSmartphone) {
+    font-size: 12px;
+  }
+
+  &__title {
+    font-family: $logoFont;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    margin: 0;
+    line-height: 34px;
+    text-align: center;
+    padding: 60px 0 30px;
+
+    @include respond-to(middleSmartphone) {
+      font-size: 24px;
+    }
+  }
+
+  &__slider {
+    max-width: 1000px;
+    margin: 10px auto;
+
+    @include respond-to(largeScreen) {
+      width: 80%;
+    }
+    @include respond-to(middleSmartphone) {
+      width: 80%;
+    }
+  }
+
+  &__box {
+    @include flex();
+
+    @include respond-to(largeScreen) {
+      //width: 80%;
+    }
+    @include respond-to(middleSmartphone) {
+      display: block;
+    }
+
+
+  }
+
+  &__img {
+    width: 50%;
+    height: 50%;
+    @include flex();
+
+    @include respond-to(middleSmartphone) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid $btnColor;
+
+    @include respond-to(largeScreen) {
+      font-size: 18px;
+    }
+    @include respond-to(middleSmartphone) {
+      font-size: 14px;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+  }
+
+  &__tb {
+    width: 100%;
+    font-size: 16px;
+
+    @include respond-to(largeScreen) {
+      width: 80%;
+      font-size: 12px;
+    }
+    @include respond-to(middleSmartphone) {
+      width: 80%;
+      font-size: 10px;
+    }
+  }
+
+  &__td {
+    width: 33%;
+    text-align: center;
+  }
+
+}
+
+.icons {
+  @include flex();
+
+  &__img{
+    width: 10%;
+    height: 10%;
+    padding: 0 10px;
+  }
+
+}
