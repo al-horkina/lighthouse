@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Отель «Твой Маяк» </title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+
     <link rel="stylesheet" href="assets/css/slick/slick.css">
     <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
 </head>
@@ -16,9 +17,10 @@
         <div class="nav__logo"><img class="nav__img" src="assets/img/lighthouse.svg" alt="Твой Маяк"></div>
         <div class="soc">
             <a class="soc__link" href="#about">О нас</a>
-            <a class="soc__link" href="comfort.html">Удобства</a>
-            <a class="soc__link" href="#">Номера и цены</a>
+            <a class="soc__link" href="#comfort">Удобства</a>
+            <a class="soc__link" href="#price">Номера и цены</a>
             <a class="soc__link" href="#">Контакты</a>
+            <a class="soc__link soc__link--lng" href="#">Eng</a>
         </div>
     </div>
 </header>
@@ -54,7 +56,7 @@
     </p>
 </section>
 
-<section class="comforts">
+<section class="comforts" id="comfort">
     <div class="wrap">
         <h2 class="comforts__title">Удобства</h2>
         <div class="comforts__box">
@@ -101,14 +103,46 @@
     </div>
 </section>
 
-<section class="price">
+<section class="price" id="price">
     <div class="price__title">Номера и цены</div>
 
-    <div class="price__slider">
+    <!--Horizontal Tab-->
+    <div class="tabs">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1" title="Апартаменты-студио">Апартаменты-студио</label>
 
-        <div>
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2" title="Апартаменты со спальней">Апартаменты со спальней</label>
+
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3" title="2х уровневый люкс">2х уровневый люкс</label>
+
+        <input id="tab4" type="radio" name="tabs">
+        <label for="tab4" title="Зеленый домик">Зеленый домик</label>
+
+        <input id="tab5" type="radio" name="tabs">
+        <label for="tab5" title="Дом с тремя спальнями">Дом с тремя спальнями</label>
+
+        <div class="tabs__section" id="content-tab1">
             <div class="price__box">
-                <img class="price__img" src="assets/img/liana1.jpg" alt="">
+                <div class="price__slider">
+
+                    <div class="slider-for">
+                        <div class="slider-for__item"><img class="slider-for__img" src="assets/img/liana1.jpg" alt=""></div>
+                        <div class="slider-for__item"><img class="slider-for__img" src="assets/img/bill-anastas.jpg" alt=""></div>
+                        <div class="slider-for__item"><img class="slider-for__img" src="assets/img/liana1.jpg" alt=""></div>
+                        <div class="slider-for__item"><img class="slider-for__img" src="assets/img/bill-anastas.jpg" alt=""></div>
+
+                    </div>
+                    <div class="slider-nav">
+                        <div class="slider-nav__item"><img class="slider-nav__img" src="assets/img/liana1.jpg" alt=""></div>
+                        <div class="slider-nav__item"><img class="slider-nav__img" src="assets/img/bill-anastas.jpg" alt=""></div>
+                        <div class="slider-nav__item"><img class="slider-nav__img" src="assets/img/liana1.jpg" alt=""></div>
+                        <div class="slider-nav__item"><img class="slider-nav__img" src="assets/img/bill-anastas.jpg" alt=""></div>
+                    </div>
+                </div>
+
+
                 <div class="price__info">
                     <h3 class="price__subtitle">Апартаменты-студио</h3>
                     <p class="price__text">Удобства:</p>
@@ -135,8 +169,7 @@
                 </div>
             </div>
         </div>
-
-        <div>
+        <div class="tabs__section" id="content-tab2">
             <div class="price__box">
                 <img class="price__img" src="assets/img/liana1.jpg" alt="">
                 <div class="price__info">
@@ -165,8 +198,7 @@
                 </div>
             </div>
         </div>
-
-        <div>
+        <div class="tabs__section" id="content-tab3">
             <div class="price__box">
                 <img class="price__img" src="assets/img/liana1.jpg" alt="">
                 <div class="price__info">
@@ -195,8 +227,7 @@
                 </div>
             </div>
         </div>
-
-        <div>
+        <div class="tabs__section" id="content-tab4">
             <div class="price__box">
                 <img class="price__img" src="assets/img/liana1.jpg" alt="">
                 <div class="price__info">
@@ -223,8 +254,7 @@
                 </div>
             </div>
         </div>
-
-        <div>
+        <div class="tabs__section" id="content-tab5">
             <div class="price__box">
                 <img class="price__img" src="assets/img/liana1.jpg" alt="">
                 <div class="price__info">
@@ -253,11 +283,11 @@
                 </div>
             </div>
         </div>
-
     </div>
-
+    <!--/Horizontal Tab-->
 
 </section>
+
 
 <section class="location">
     <p>г. Одесса, ул. Какая-то 18</p>
@@ -277,6 +307,7 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMs11oSAg4opjGt0M8wHfRvT7h0BGOI7U"></script>
+
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 
 

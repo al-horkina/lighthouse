@@ -1,6 +1,6 @@
 .price {
   color: $mainFontColor;
-  font-family: $mainFont ;
+  font-family: $mainFont;
   font-size: 18px;
   margin: 50px auto;
 
@@ -27,14 +27,10 @@
   }
 
   &__slider {
-    max-width: 1000px;
-    margin: 10px auto;
+    width: 50%;
 
-    @include respond-to(largeScreen) {
-      width: 80%;
-    }
-    @include respond-to(middleSmartphone) {
-      width: 70%;
+    @media screen and (max-width: 680px) {
+      width: 100%;
     }
   }
 
@@ -47,8 +43,6 @@
     @include respond-to(middleSmartphone) {
       display: block;
     }
-
-
   }
 
   &__img {
@@ -63,7 +57,6 @@
   }
 
   &__info {
-    width: 100%;
     padding: 10px 20px;
   }
 
@@ -108,10 +101,33 @@
 .icons {
   @include flex();
 
-  &__img{
+  &__img {
     width: 10%;
     height: 10%;
     padding: 0 10px;
   }
+}
+
+.slider {
+
+  &-for, &-nav {
+    width: 100%;
+    height: auto;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-nav {
+    padding: 10px 0;
+
+    &__item {
+      padding: 0 2px;
+      cursor: pointer;
+    }
+  }
+
 
 }
