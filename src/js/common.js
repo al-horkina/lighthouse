@@ -25,7 +25,7 @@
         });
 
 
-        const $map = $('.location');
+       /* const $map = $('.location');
         const map = new google.maps.Map(
             $map[0],
             {
@@ -59,7 +59,7 @@
             title: 'Titusville',
             icon: image
         });
-
+*/
 
     })
 })(jQuery);

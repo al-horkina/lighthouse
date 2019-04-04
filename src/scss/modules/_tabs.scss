@@ -18,6 +18,12 @@
       margin: 0 0 5px;
       line-height: 1.5;
       color: #383838;
+      /*@include respond-to(middleSmartphone) {
+
+      }
+      @include respond-to(largeScreen) {
+        @include flex-center-col();
+      }*/
       /* прикрутим анимацию */
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
