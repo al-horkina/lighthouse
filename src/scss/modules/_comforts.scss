@@ -5,7 +5,7 @@
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
-  background-image: url("../img/main/06.jpg");
+  background-image: url("../img/main/nik-lanus-1920.jpg");
 
   @include respond-to(largeScreen) {
     width: 100%;
@@ -40,6 +40,7 @@
     padding: 10px;
     box-sizing: border-box;
     background: rgba(250, 250, 250, .8);
+    border-radius: 10px;
 
     @include respond-to(largeScreen) {
       width: 29%;

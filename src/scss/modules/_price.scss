@@ -28,9 +28,12 @@
 
   &__slider {
     width: 50%;
+    padding: 15px;
 
-    @media screen and (max-width: 680px) {
-      width: 100%;
+    @include respond-to(middleSmartphone) {
+      width: 90%;
+      font-size: 12px;
+      margin: 0 auto;
     }
   }
 
@@ -38,7 +41,7 @@
     @include flex();
 
     @include respond-to(largeScreen) {
-      //width: 80%;
+
     }
     @include respond-to(middleSmartphone) {
       display: block;
@@ -74,12 +77,15 @@
   }
 
   &__text {
-    font-weight: bold;
+
+    &--big {
+      font-weight: bold;
+    }
   }
 
   &__tb {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
 
     @include respond-to(largeScreen) {
       width: 80%;
@@ -88,12 +94,18 @@
     @include respond-to(middleSmartphone) {
       width: 80%;
       font-size: 10px;
+      margin: 0 auto;
     }
   }
 
   &__td {
     width: 33%;
     text-align: center;
+    border-right: 1px solid $btnColor;
+
+    &:last-child {
+      border: none;
+    }
   }
 
 }
@@ -128,6 +140,5 @@
       cursor: pointer;
     }
   }
-
 
 }

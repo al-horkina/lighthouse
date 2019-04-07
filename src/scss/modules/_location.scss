@@ -1,12 +1,31 @@
 .location {
-  &>iframe{
-  height: 300px;
-  width: 100%;
-  //margin-top: 78px;
-  border: 0;
-}
+  color: $mainFontColor;
+  font-family: $mainFont;
+  font-size: 18px;
+  margin: 50px auto;
+
+  & > iframe {
+    height: 500px;
+    width: 100%;
+    border: 0;
+  }
   @include respond-to(largeScreen) {
     width: 100%;
+  }
+
+  &__title {
+    font-family: $logoFont;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    margin: 0;
+    line-height: 34px;
+    text-align: center;
+    padding: 60px 0 30px;
+
+    @include respond-to(middleSmartphone) {
+      font-size: 24px;
+    }
   }
 
 }

@@ -7,6 +7,7 @@
             dots: true
         });
 
+
         $('.slider-for').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -23,6 +24,13 @@
             centerMode: true,
             focusOnSelect: true
         });
+        $( 'label' ).on( 'click', function( event ) {
+            $('.slider-for').slick('setPosition');
+            $('.slider-nav').slick('setPosition');
+        });
+
+
+
 
 
        /* const $map = $('.location');

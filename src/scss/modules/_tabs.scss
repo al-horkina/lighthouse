@@ -9,21 +9,17 @@
 
   /* Стили секций с содержанием */
   &__section {
-    display: none;
-    padding: 15px;
+    visibility: hidden;
+    display: block;    /* undo display:none          */
+    height: 0;         /* height:0 is also invisible */
     background: #fff;
-    border: 1px solid #ddd;
+    overflow: hidden;
 
     &>div {
       margin: 0 0 5px;
       line-height: 1.5;
       color: #383838;
-      /*@include respond-to(middleSmartphone) {
 
-      }
-      @include respond-to(largeScreen) {
-        @include flex-center-col();
-      }*/
       /* прикрутим анимацию */
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
@@ -50,8 +46,6 @@
         opacity: 1;
       }
     }
-
-
   }
 
   /* Прячем чекбоксы */
@@ -61,17 +55,16 @@
   }
   /* Стили переключателей вкладок (табов) */
   &>label {
-
     display: inline-block;
-    margin: 0 0 -1px;
     padding: 10px 10px;
     font-weight: 600;
     text-align: center;
     color: #aaa;
+    margin: 0 0 -1px;
     border: 0px solid #ddd;
     border-width: 1px 1px 1px 1px;
-    background: #f1f1f1;
     border-radius: 3px 3px 0 0;
+    background: #f1f1f1;
   }
 
   /* Изменения стиля переключателей вкладок при наведении */
@@ -96,6 +89,9 @@
 #tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4,
 #tab5:checked~#content-tab5 {
   display: block;
+  height: 100%;      /* let the content decide it  */
+  visibility: initial;
+  border: 1px solid #ddd;
 }
 /* Убираем текст с переключателей
 * и оставляем иконки на малых экранах
