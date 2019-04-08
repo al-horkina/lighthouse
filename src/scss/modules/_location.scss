@@ -2,13 +2,8 @@
   color: $mainFontColor;
   font-family: $mainFont;
   font-size: 18px;
-  margin: 50px auto;
+  margin: 50px auto 0;
 
-  & > iframe {
-    height: 500px;
-    width: 100%;
-    border: 0;
-  }
   @include respond-to(largeScreen) {
     width: 100%;
   }
@@ -21,10 +16,51 @@
     margin: 0;
     line-height: 34px;
     text-align: center;
-    padding: 60px 0 30px;
+    padding: 30px 0;
 
     @include respond-to(middleSmartphone) {
       font-size: 24px;
+    }
+  }
+
+  &__info {
+    @include flex();
+
+    @include respond-to(middleSmartphone) {
+      @include flex-center-col();
+      font-size: 16px;
+    }
+  }
+
+  &__box {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    padding: 10px;
+
+    @include respond-to(middleSmartphone) {
+      width: 90%;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+
+    &--small {
+      font-weight: normal;
+      text-decoration: none;
+      color: $mainFontColor;
+    }
+  }
+
+  &__iframe {
+    height: 500px;
+    width: 50%;
+    border: 0;
+
+    @include respond-to(middleSmartphone) {
+      width: 100%;
     }
   }
 }

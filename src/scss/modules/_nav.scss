@@ -14,7 +14,7 @@
 
   &__img {
     width: 50px;
-    height: auto;
+    height: 50px;
 
   }
 
@@ -36,12 +36,14 @@
 .soc {
   margin: auto 0;
   font-size: 24px;
+  line-height: 64px;
   font-weight: 400;
   text-transform: uppercase;
 
 
   @include respond-to(middleSmartphone) {
     margin: 8px;
+    line-height: 35px;
   }
 
   &__link {
