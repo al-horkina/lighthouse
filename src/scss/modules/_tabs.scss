@@ -87,7 +87,7 @@
 
 /* Активация секций с помощью псевдокласса :checked */
 #tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4,
-#tab5:checked~#content-tab5 {
+#tab5:checked~#content-tab5, #tab6:checked~#content-tab6 {
   display: block;
   height: 100%;      /* let the content decide it  */
   visibility: visible;

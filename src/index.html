@@ -122,13 +122,17 @@
         <label for="tab2" title="Апартаменты со спальней">Апартаменты со спальней</label>
 
         <input id="tab3" type="radio" name="tabs">
-        <label for="tab3" title="2х уровневый люкс">2х уровневый люкс</label>
+        <label for="tab3" title="Апартаменты 2й этаж">Апартаменты 2й этаж</label>
 
         <input id="tab4" type="radio" name="tabs">
-        <label for="tab4" title="Зеленый домик">Зеленый домик</label>
+        <label for="tab4" title="2х уровневый люкс">2х уровневый люкс</label>
 
         <input id="tab5" type="radio" name="tabs">
-        <label for="tab5" title="Дом с тремя спальнями">Дом с тремя спальнями</label>
+        <label for="tab5" title="Зеленый домик">Зеленый домик</label>
+
+        <input id="tab6" type="radio" name="tabs">
+        <label for="tab6" title="Дом с тремя спальнями">Дом с тремя спальнями</label>
+
 
         <div class="tabs__section" id="content-tab1">
             <div class="price__box">
@@ -211,6 +215,37 @@
                             <td class="price__td">1000 грн</td>
                         </tr>
                     </table>
+
+
+                    <div class="reservation">
+                        <!-- Кнопка активации -->
+                        <label class="btn" for="modal-1">Забронировать номер</label>
+                        <!-- Модальное окно -->
+                        <div class="modal">
+                            <input class="modal-open" id="modal-1" type="checkbox" hidden>
+                            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                <label class="modal-overlay" for="modal-1"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-header">
+                                        <h2>Забронировать номер</h2>
+                                        <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="modal-form" action="assets/php/send.php"
+                                              method="post">
+                                            <input name="name" placeholder="Укажите ваше имя" class="name" required/>
+                                            <input name="tel" placeholder="Укажите ваш номер телефона" class="tel"
+                                                   required/>
+                                            <input name="submit" class="btn" type="submit" value="Забронировать"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -302,7 +337,96 @@
                 </div>
             </div>
         </div>
+
         <div class="tabs__section" id="content-tab3">
+            <div class="price__box">
+
+                <div class="price__slider">
+
+                    <div class="slider-for">
+                        <div class="slider-for__item">
+                            <img class="slider-for__img" src="assets/img/2nd-floor/2nd-floor-01-680x453.jpg"
+                                 alt="Апартаменты 2й этаж">
+                        </div>
+                        <div class="slider-for__item">
+                            <img class="slider-for__img" src="assets/img/2nd-floor/2nd-floor-02-680x453.jpg"
+                                 alt="Апартаменты 2й этаж">
+
+                        </div>
+                        <div class="slider-for__item">
+                            <img class="slider-for__img" src="assets/img/2nd-floor/2nd-floor-03-680x453.jpg"
+                                 alt="Апартаменты 2й этаж">
+                        </div>
+                        <div class="slider-for__item">
+                            <img class="slider-for__img" src="assets/img/2nd-floor/2nd-floor-04-680x453.jpg"
+                                 alt="Апартаменты 2й этаж">
+                        </div>
+                        <div class="slider-for__item">
+                            <img class="slider-for__img" src="assets/img/2nd-floor/2nd-floor-05-680x453.jpg"
+                                 alt="Апартаменты 2й этаж">
+                        </div>
+
+                    </div>
+                    <div class="slider-nav">
+                        <div class="slider-nav__item">
+                            <img class="slider-nav__img" src="assets/img/2nd-floor/2nd-floor-01-180x120.jpg"
+                                 alt="Апартаменты со спальней">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img class="slider-nav__img" src="assets/img/2nd-floor/2nd-floor-02-180x120.jpg"
+                                 alt="Апартаменты со спальней">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img class="slider-nav__img" src="assets/img/2nd-floor/2nd-floor-03-180x120.jpg"
+                                 alt="Апартаменты со спальней">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img class="slider-nav__img" src="assets/img/2nd-floor/2nd-floor-04-180x120.jpg"
+                                 alt="Апартаменты со спальней">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img class="slider-nav__img" src="assets/img/2nd-floor/2nd-floor-05-180x120.jpg"
+                                 alt="Апартаменты со спальней">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price__info">
+                    <h3 class="price__subtitle">Апартаменты 2й этаж</h3>
+                    <p class="price__text--big">Удобства:</p>
+                    <p class="price__text">Апартаменты состоят из гостиной, хорошо оборудованной кухни с обеденной
+                        зоной, отдельной спальни с большой кроватью и собственной ванной комнаты с душем.
+                        В числе удобств холодильник, плита и чайник.
+                        Предоставляется парковка.
+                    </p>
+                    <div class="icons">
+                        <img class="icons__img" src="assets/img/icons/009-bed.svg" alt="Спальня" title="Спальня">
+                        <img class="icons__img" src="assets/img/icons/017-fan.svg" alt="Кондиционер"
+                             title="Кондиционер">
+                        <img class="icons__img" src="assets/img/icons/013-teapot.svg" alt="Оборудованная кухня"
+                             title="Оборудованная кухня">
+                        <img class="icons__img" src="assets/img/icons/014-table.svg" alt="Обеденная зона"
+                             title="Обеденная зона">
+                        <img class="icons__img" src="assets/img/icons/garage.svg" alt="Парковка" title="Парковка">
+                    </div>
+                    <p class="price__text--big">Цена:</p>
+                    <table class="price__tb">
+                        <tr>
+                            <td class="price__td">Сентябрь-май</td>
+                            <td class="price__td">Июнь</td>
+                            <td class="price__td">Июль-Август</td>
+                        </tr>
+                        <tr>
+                            <td class="price__td">800 грн</td>
+                            <td class="price__td">1200 грн</td>
+                            <td class="price__td">1600 грн</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs__section" id="content-tab4">
             <div class="price__box">
 
                 <div class="price__slider">
@@ -388,7 +512,8 @@
                 </div>
             </div>
         </div>
-        <div class="tabs__section" id="content-tab4">
+
+        <div class="tabs__section" id="content-tab5">
             <div class="price__box">
 
                 <div class="price__slider">
@@ -471,7 +596,8 @@
                 </div>
             </div>
         </div>
-        <div class="tabs__section" id="content-tab5">
+
+        <div class="tabs__section" id="content-tab6">
             <div class="price__box">
 
                 <div class="price__slider">
@@ -594,7 +720,8 @@
                 <a href="mailto:odessalight.od@gmail.com" class="location__text--small">odessalight.od@gmail.com</a>
             </p>
         </div>
-        <iframe class="location__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.1612285502147!2d30.730795414987412!3d46.405858778137784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63361c094f4b7%3A0xc135e57527631b60!2z0LLRg9C70LjRhtGPINCa0L7RgdGC0LDQvdC00ZYsIDEwMCwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1554303379867!5m2!1sru!2sua"
+        <iframe class="location__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.1612285502147!2d30.730795414987412!3d46.405858778137784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63361c094f4b7%3A0xc135e57527631b60!2z0LLRg9C70LjRhtGPINCa0L7RgdGC0LDQvdC00ZYsIDEwMCwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1554303379867!5m2!1sru!2sua"
                 allowfullscreen></iframe>
     </div>
 </section>
@@ -604,9 +731,6 @@
     <div class="wrap wrap--nav">
         <div class="footer__title"><img class="footer__img" src="assets/img/lighthouse.svg" alt="Твой Маяк">Твой Маяк
         </div>
-        <!--<div class="footer__info">
-            <span class="footer__address">г. Одесса, ул. Какая-то 18</span>тел. +38 097 111 11 11
-        </div>-->
     </div>
 </footer>
 
