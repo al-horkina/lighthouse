@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Отель «Твой Маяк» </title>
+    <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/normalize.css">
 
     <link rel="stylesheet" href="assets/css/slick/slick.css">
@@ -138,7 +139,7 @@
             <div class="price__box">
                 <div class="price__slider">
 
-                    <div class="slider-for">
+                    <div class="slider-for slider-for1">
                         <div class="slider-for__item">
                             <img class="slider-for__img" src="assets/img/studio/studio-02-680x453.jpg"
                                  alt="Апартаменты-студио">
@@ -162,7 +163,7 @@
                         </div>
 
                     </div>
-                    <div class="slider-nav">
+                    <div class="slider-nav slider-nav1">
                         <div class="slider-nav__item">
                             <img class="slider-nav__img" src="assets/img/studio/studio-02-180x120.jpg"
                                  alt="Апартаменты-студио">
@@ -231,12 +232,11 @@
                                         <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
                                     </div>
                                     <div class="modal-body">
-                                        <form class="modal-form" action="assets/php/send.php"
-                                              method="post">
+                                        <form class="modal-form" action="" method="post">
                                             <input name="name" placeholder="Укажите ваше имя" class="name" required/>
                                             <input name="tel" placeholder="Укажите ваш номер телефона" class="tel"
                                                    required/>
-                                            <input name="submit" class="btn" type="submit" value="Забронировать"/>
+                                            <input name="submit" class="btn" type="submit" value="Забронировать" />
                                         </form>
                                     </div>
                                 </div>
@@ -255,7 +255,7 @@
 
                 <div class="price__slider">
 
-                    <div class="slider-for">
+                    <div class="slider-for slider-for2">
                         <div class="slider-for__item">
                             <img class="slider-for__img" src="assets/img/bedroom/bedroom-04-680x453.jpg"
                                  alt="Апартаменты со спальней">
@@ -279,7 +279,7 @@
                         </div>
 
                     </div>
-                    <div class="slider-nav">
+                    <div class="slider-nav slider-nav2">
                         <div class="slider-nav__item">
                             <img class="slider-nav__img" src="assets/img/bedroom/bedroom-04-180x120.jpg"
                                  alt="Апартаменты со спальней">
@@ -334,6 +334,34 @@
                             <td class="price__td">1600 грн</td>
                         </tr>
                     </table>
+
+                    <div class="reservation">
+                        <!-- Кнопка активации -->
+                        <label class="btn" for="modal-2">Забронировать номер</label>
+                        <!-- Модальное окно -->
+                        <div class="modal">
+                            <input class="modal-open" id="modal-2" type="checkbox" hidden>
+                            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                <label class="modal-overlay" for="modal-2"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-header">
+                                        <h2>Забронировать номер</h2>
+                                        <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="modal-form" action="" method="post">
+                                            <input name="name" placeholder="Укажите ваше имя" class="name" required/>
+                                            <input name="tel" placeholder="Укажите ваш номер телефона" class="tel"
+                                                   required/>
+                                            <input name="submit" class="btn" type="submit" value="Забронировать" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -343,7 +371,7 @@
 
                 <div class="price__slider">
 
-                    <div class="slider-for">
+                    <div class="slider-for slider-for3">
                         <div class="slider-for__item">
                             <img class="slider-for__img" src="assets/img/2nd-floor/2nd-floor-00-680x453.jpg"
                                  alt="Апартаменты 2й этаж">
@@ -371,7 +399,7 @@
                         </div>
 
                     </div>
-                    <div class="slider-nav">
+                    <div class="slider-nav slider-nav3">
                         <div class="slider-nav__item">
                             <img class="slider-nav__img" src="assets/img/2nd-floor/2nd-floor-00-180x120.jpg"
                                  alt="Апартаменты со спальней">
@@ -430,6 +458,34 @@
                             <td class="price__td">1600 грн</td>
                         </tr>
                     </table>
+
+                    <div class="reservation">
+                        <!-- Кнопка активации -->
+                        <label class="btn" for="modal-3">Забронировать номер</label>
+                        <!-- Модальное окно -->
+                        <div class="modal">
+                            <input class="modal-open" id="modal-3" type="checkbox" hidden>
+                            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                <label class="modal-overlay" for="modal-3"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-header">
+                                        <h2>Забронировать номер</h2>
+                                        <label class="btn-close" for="modal-3" aria-hidden="true">×</label>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="modal-form" action="" method="post">
+                                            <input name="name" placeholder="Укажите ваше имя" class="name" required/>
+                                            <input name="tel" placeholder="Укажите ваш номер телефона" class="tel"
+                                                   required/>
+                                            <input name="submit" class="btn" type="submit" value="Забронировать" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -439,7 +495,7 @@
 
                 <div class="price__slider">
 
-                    <div class="slider-for">
+                    <div class="slider-for slider-for4">
                         <div class="slider-for__item">
                             <img class="slider-for__img" src="assets/img/lux2/lux2-02-680x453.jpg"
                                  alt="2х уровневый люкс">
@@ -463,7 +519,7 @@
                         </div>
 
                     </div>
-                    <div class="slider-nav">
+                    <div class="slider-nav slider-nav4">
                         <div class="slider-nav__item">
                             <img class="slider-nav__img" src="assets/img/lux2/lux2-02-180x120.jpg"
                                  alt="2х уровневый люкс">
@@ -517,6 +573,34 @@
                             <td class="price__td">1800 грн</td>
                         </tr>
                     </table>
+
+                    <div class="reservation">
+                        <!-- Кнопка активации -->
+                        <label class="btn" for="modal-4">Забронировать номер</label>
+                        <!-- Модальное окно -->
+                        <div class="modal">
+                            <input class="modal-open" id="modal-4" type="checkbox" hidden>
+                            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                <label class="modal-overlay" for="modal-4"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-header">
+                                        <h2>Забронировать номер</h2>
+                                        <label class="btn-close" for="modal-4" aria-hidden="true">×</label>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="modal-form" action="" method="post">
+                                            <input name="name" placeholder="Укажите ваше имя" class="name" required/>
+                                            <input name="tel" placeholder="Укажите ваш номер телефона" class="tel"
+                                                   required/>
+                                            <input name="submit" class="btn" type="submit" value="Забронировать" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -526,7 +610,7 @@
 
                 <div class="price__slider">
 
-                    <div class="slider-for">
+                    <div class="slider-for slider-for5">
                         <div class="slider-for__item">
                             <img class="slider-for__img" src="assets/img/green-house/green-house-02-680x453.jpg"
                                  alt="Зеленый домик">
@@ -550,7 +634,7 @@
                         </div>
 
                     </div>
-                    <div class="slider-nav">
+                    <div class="slider-nav slider-nav5">
                         <div class="slider-nav__item">
                             <img class="slider-nav__img" src="assets/img/green-house/green-house-02-180x120.jpg"
                                  alt="Зеленый домик">
@@ -601,6 +685,34 @@
                             <td class="price__td">800 грн</td>
                         </tr>
                     </table>
+
+                    <div class="reservation">
+                        <!-- Кнопка активации -->
+                        <label class="btn" for="modal-5">Забронировать номер</label>
+                        <!-- Модальное окно -->
+                        <div class="modal">
+                            <input class="modal-open" id="modal-5" type="checkbox" hidden>
+                            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                <label class="modal-overlay" for="modal-5"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-header">
+                                        <h2>Забронировать номер</h2>
+                                        <label class="btn-close" for="modal-5" aria-hidden="true">×</label>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="modal-form" action="" method="post">
+                                            <input name="name" placeholder="Укажите ваше имя" class="name" required/>
+                                            <input name="tel" placeholder="Укажите ваш номер телефона" class="tel"
+                                                   required/>
+                                            <input name="submit" class="btn" type="submit" value="Забронировать" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -610,7 +722,7 @@
 
                 <div class="price__slider">
 
-                    <div class="slider-for">
+                    <div class="slider-for slider-for6">
                         <div class="slider-for__item">
                             <img class="slider-for__img" src="assets/img/bedroom3/bedroom3-06-680x453.jpg"
                                  alt="Дом с тремя спальнями">
@@ -642,7 +754,7 @@
                         </div>
 
                     </div>
-                    <div class="slider-nav">
+                    <div class="slider-nav slider-nav6">
                         <div class="slider-nav__item">
                             <img class="slider-nav__img" src="assets/img/bedroom3/bedroom3-06-180x120.jpg"
                                  alt="Дом с тремя спальнями">
@@ -705,6 +817,34 @@
 
                         </tr>
                     </table>
+
+                    <div class="reservation">
+                        <!-- Кнопка активации -->
+                        <label class="btn" for="modal-6">Забронировать номер</label>
+                        <!-- Модальное окно -->
+                        <div class="modal">
+                            <input class="modal-open" id="modal-6" type="checkbox" hidden>
+                            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                <label class="modal-overlay" for="modal-6"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-header">
+                                        <h2>Забронировать номер</h2>
+                                        <label class="btn-close" for="modal-6" aria-hidden="true">×</label>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="modal-form" action="" method="post">
+                                            <input name="name" placeholder="Укажите ваше имя" class="name" required/>
+                                            <input name="tel" placeholder="Укажите ваш номер телефона" class="tel"
+                                                   required/>
+                                            <input name="submit" class="btn" type="submit" value="Забронировать" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
