@@ -53,6 +53,13 @@
   &__img {
     width: 33%;
     padding-top: 10px;
+    transition: transform 1s;
+
+    &:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+
+    }
   }
 
   &__text {
