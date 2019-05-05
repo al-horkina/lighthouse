@@ -8,6 +8,10 @@
     font-family: $logoFont;
     padding: 5px 0;
     font-size: 34px;
+
+    @include respond-to(middleSmartphone){
+      font-size: 22px;
+    }
   }
 
   &__img {

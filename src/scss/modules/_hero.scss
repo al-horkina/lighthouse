@@ -36,13 +36,13 @@
     padding-top: 25px;
     margin: 0;
     font-family: $logoFont;
-    font-size: 175px;
+    font-size: 150px;
     font-weight: 400;
     color: $btnColor;
     text-shadow: 3px 2px 3px rgba(48,39,34,0.99);
 
     @include respond-to(middleSmartphone) {
-      font-size: 55px;
+      font-size: 40px;
     }
     @include respond-to(largeScreen) {
       font-size: 80px;
