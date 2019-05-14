@@ -108,6 +108,7 @@
     width: 33%;
     text-align: center;
     border-right: 1px solid $btnColor;
+    font-weight: bold;
 
     &:last-child {
       border: none;
@@ -124,6 +125,12 @@
     height: 10%;
     max-width: 50px;
     padding: 0 10px;
+
+    &--small {
+      padding: 8px 15px 0 10px;
+      max-width: 30px;
+
+    }
   }
 }
 
