@@ -37,7 +37,7 @@
     margin: 0;
     font-family: $logoFont;
     font-size: 150px;
-    font-weight: 400;
+    font-weight: bold;
     color: $btnColor;
     text-shadow: 3px 2px 3px rgba(48,39,34,0.99);
 
@@ -45,7 +45,7 @@
       font-size: 40px;
     }
     @include respond-to(largeScreen) {
-      font-size: 80px;
+      font-size: 60px;
     }
   }
 
