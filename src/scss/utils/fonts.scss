@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat:300,400,700&subset=cyrillic,cyrillic-ext');
 
-@font-face {
+/*@font-face {
   font-family: 'Helvetica';
   src: url('/assets/font/Helvetica.woff2') format('woff2'),
   url('/assets/font/Helvetica.woff') format('woff');
@@ -15,5 +15,27 @@
   src: url('/assets/font/Helvetica-Bold.woff2') format('woff2'),
   url('/assets/font/Helvetica-Bold.woff') format('woff');
   font-weight: bold;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/assets/font/HelveticaNeueDeskInterface-Bold.eot');
+  src: url('/assets/font/HelveticaNeueDeskInterface-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/font/HelveticaNeueDeskInterface-Bold.woff2') format('woff2'),
+  url('/assets/font/HelveticaNeueDeskInterface-Bold.woff') format('woff'),
+  url('/assets/font/HelveticaNeueDeskInterface-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/assets/font/HelveticaNeueDeskInterface-Regular.eot');
+  src: url('/assets/font/HelveticaNeueDeskInterface-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/assets/font/HelveticaNeueDeskInterface-Regular.woff2') format('woff2'),
+  url('/assets/font/HelveticaNeueDeskInterface-Regular.woff') format('woff'),
+  url('/assets/font/HelveticaNeueDeskInterface-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
