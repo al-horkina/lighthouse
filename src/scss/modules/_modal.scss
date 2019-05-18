@@ -15,6 +15,7 @@
   line-height: 1;
   margin: 0;
 }
+
 /* кнопка закрытия окна */
 .modal .btn-close {
   color: #aaa;
@@ -88,7 +89,8 @@
   padding: 20px;
 }
 .modal-body p {
-  margin: 0;
+  align-self: flex-start;
+  font-weight: 300;
 }
 .modal-header,
 .modal-footer {
